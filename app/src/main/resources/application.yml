@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: smartbank-api
+
+  profiles:
+    active: dev
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/smartbank_dev
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  datasource:
+    url: jdbc:postgresql://prod-db:5432/smartbank
+    username: prod_user
+    password: prod_pass
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
