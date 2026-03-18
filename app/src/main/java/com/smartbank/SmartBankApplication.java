@@ -1,13 +1,13 @@
-package com.bank.app;
+package com.smartbank;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AppApplication {
+public class SmartBankApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AppApplication.class, args);
+		SpringApplication.run(SmartBankApplication.class, args);
 	}
 
 }

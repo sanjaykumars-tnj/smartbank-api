@@ -1,4 +1,4 @@
-package com.bank.app.controller;
+package com.smartbank.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
